@@ -59,8 +59,8 @@ project_root/
 ## Environment Setup
 
 Create the conda environment:
-```bash
+```
 conda env create -f environment.yml
 conda activate myenv
-
+```
 then start the main.py `python main.py`
