@@ -1,6 +1,60 @@
-You need to have your OPENAI KEY
-create .env file and create a OPENAI_API_KEY and put the OPENAI Key there as a variable
-you need to download the vector_db from https://drive.google.com/drive/folders/1P5eJOmRAqVWhblJVSraic-619Up5Y4fk?usp=sharing (SAR) and https://drive.google.com/drive/folders/1mqLVuHy6xS6D4llxPOckwCGL--jnFJC5?usp=sharing (RAG)
+## Setup Instructions
+
+Follow these steps to run the project.
+
+### 1. Set Your OpenAI API Key
+
+You need an OpenAI API key to run the system.
+
+Create a `.env` file in the project root and add your API key as a variable:
+
+```
+OPENAI_API_KEY=your_openai_api_key_here
+```
+
+---
+
+### 2. Download the Vector Databases
+
+Download the required vector databases from the following links:
+
+* **SAR Vector Database**
+  https://drive.google.com/drive/folders/1P5eJOmRAqVWhblJVSraic-619Up5Y4fk?usp=sharing
+
+* **RAG Vector Database**
+  https://drive.google.com/drive/folders/1mqLVuHy6xS6D4llxPOckwCGL--jnFJC5?usp=sharing
+
+---
+
+### 3. Place the Databases in the Project
+
+After downloading:
+
+
+Your folder structure should look like this:
+
+```
+project_root/
+│
+├── chroma_rag_storage/        # Vector database for RAG
+├── chroma_sar_storage/        # Vector database for SAR
+│
+├── frontend/                  # Frontend interface
+│
+├── Embedding_RAG_Chroma.py    # Create RAG embeddings using Chroma
+├── Embedding_RAG.py           # RAG embedding pipeline
+├── Embedding_SAR_Chroma.py    # Create SAR embeddings using Chroma
+├── Embedding_SAR.py           # SAR embedding pipeline
+│
+├── main.py                    # Main program entry point
+├── QAGenerator.py             # Question generation script
+├── RAG.py                     # Retrieval-Augmented Generation system
+├── SAR.py                     # Semantic Answer Retrieval system
+├── summarizer.py              # Text summarization utility
+│
+└── README.md
+```
+
 
 ## Environment Setup
 
