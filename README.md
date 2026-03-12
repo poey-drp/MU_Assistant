@@ -61,6 +61,6 @@ project_root/
 Create the conda environment:
 ```
 conda env create -f environment.yml
-conda activate myenv
+conda activate scraper
 ```
 then start the main.py `python main.py`
